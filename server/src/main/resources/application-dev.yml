@@ -1,0 +1,17 @@
+server:
+  port: 9090
+  
+# Hibernate JPA
+# password Helpe_Imarket_123
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/iMarket_Refactor
+    username: root
+    password: Helpe_Imarket_123
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true

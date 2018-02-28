@@ -1,2 +1,8 @@
 
 client/package-lock.json
+/.metadata/
+.DS_Store
+server/.mvn/wrapper/maven-wrapper.jar
+server/.mvn/wrapper/maven-wrapper.jar
+server/.mvn/wrapper/maven-wrapper.properties
+server/.mvn/wrapper/maven-wrapper.jar

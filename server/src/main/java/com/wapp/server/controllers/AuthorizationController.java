@@ -17,6 +17,7 @@ public class AuthorizationController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@RequestMapping(value = "/usercreation", method=RequestMethod.POST)
 	public String signUp(@RequestBody User user) {
+	//public String signUp() {
 		logger.debug("User Creation started!");
 		System.out.println(user.getUserName());
 		logger.debug("User Creation Succeeded!");

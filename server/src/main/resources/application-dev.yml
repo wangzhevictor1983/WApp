@@ -1,5 +1,11 @@
 server:
   port: 9090
+  # HTTPS certification
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: 328626
+    keyStoreType: PKCS12
+    keyAlias: tomcat
   
 # Hibernate JPA
 # password Helpe_Imarket_123

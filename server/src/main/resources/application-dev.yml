@@ -7,17 +7,13 @@ server:
     keyStoreType: PKCS12
     keyAlias: tomcat
   
-# Hibernate JPA
-# password Helpe_Imarket_123
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/iMarket_Refactor
-    username: root
-    password: Helpe_Imarket_123
-    driverClassName: com.mysql.jdbc.Driver
-  jpa:
-    database: MYSQL
-    hibernate:
-      ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL5Dialect
-    show-sql: true
+#mysql database setting  
+jdbc:
+  driver: com.mysql.jdbc.Driver  
+  url: jdbc:mysql://localhost:3306/WAppDatabase?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull  
+  username: root  
+  password: 328626  
+  #connection pool settings  
+  pool:
+    maxIdle: 10  
+    maxActive: 40  
